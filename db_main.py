@@ -13,7 +13,7 @@ def set_fn():
 
     ds.set(key, value)
     
-    return 'OK!'
+    return 'OK'
 
 @app.route('/fn/del_fn', methods=['POST'])
 def del_fn():
@@ -33,5 +33,8 @@ def get_fn():
 
     return str(value)
 
+def main(host='0.0.0.0', port=5000):
+    app.run(debug=True, host=host, port=port)
+
 if __name__=='__main__':
-    app.run(debug=True)
+    main()

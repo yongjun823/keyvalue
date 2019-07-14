@@ -12,7 +12,7 @@ class DataStore:
         if key in self.data_map.keys():
             return self.data_map[key]
         else:
-            pass
+            return None
 
     def delete(self, key):
         del self.data_map[key]
