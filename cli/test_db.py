@@ -20,3 +20,9 @@ def test_del():
 
     assert result1 == 'OK' and result2 == 'None'
 
+def test_incr():
+    db_cla.set_req(['cnt', '100'])
+
+    result = db_cla.incr_req(['cnt'])
+
+    assert result == '101.0'

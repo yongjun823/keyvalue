@@ -8,7 +8,6 @@ app = Flask(__name__)
 @app.route('/fn/set_fn', methods=['POST'])
 def set_fn():
     data = json.loads(request.data.decode('utf-8'))
-    print(data)
     key, value = data['key'], data['value']
 
     ds.set(key, value)
@@ -35,7 +34,12 @@ def get_fn():
 
 @app.route('/fn/incr_fn', methods=['POST'])
 def incr_fn():
+    data = json.loads(request.data.decode('utf-8'))
+    key= data['key']
     
+    value = ds.incr(key)
+
+    return str(value)
 
 def main(host='0.0.0.0', port=5000):
     app.run(debug=True, host=host, port=port)

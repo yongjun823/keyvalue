@@ -8,6 +8,7 @@ class DataStore:
         try:
             float_value = float(value)
             float_value += 1
+            self.data_map[key] = float_value
 
             return float_value
         except:
@@ -28,4 +29,3 @@ class DataStore:
     def show_db(self):
         for key in self.data_map.keys():
             print('{}: {}'.format(key, self.data_map[key]))
-

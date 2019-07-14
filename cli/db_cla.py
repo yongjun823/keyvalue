@@ -30,3 +30,14 @@ def del_req(s):
 
     res = requests.post('http://localhost:5000/fn/del_fn', data=json.dumps(data))
     return res.text
+
+def incr_req(s):
+    if len(s) != 1:
+        return
+
+    key= s[0]
+    data = {'key': key}
+
+    res = requests.post('http://localhost:5000/fn/incr_fn', data=json.dumps(data))
+    return res.text
+    
