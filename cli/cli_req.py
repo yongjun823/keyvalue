@@ -1,6 +1,5 @@
 from db_cla import set_req, get_req, del_req
 
-
 while True:
     qs = input('== ')
     qqs = qs.split()

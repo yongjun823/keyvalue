@@ -33,6 +33,10 @@ def get_fn():
 
     return str(value)
 
+@app.route('/fn/incr_fn', methods=['POST'])
+def incr_fn():
+    
+
 def main(host='0.0.0.0', port=5000):
     app.run(debug=True, host=host, port=port)
 
