@@ -26,5 +26,6 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
+    python db/db_main.py &
     pytest cli/
   displayName: 'pytest'
