@@ -42,7 +42,7 @@ def incr_fn():
     return str(value)
 
 def main(host='0.0.0.0', port=5000):
-    app.run(debug=True, host=host, port=port)
+    app.run(host=host, port=port)
 
 if __name__=='__main__':
     main()
