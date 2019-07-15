@@ -26,3 +26,4 @@ def test_incr():
     result = db_cla.incr_req(['cnt'])
 
     assert result == '101.0'
+    print(11)
