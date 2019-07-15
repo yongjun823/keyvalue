@@ -2,6 +2,7 @@
 ``python key value storage! ``
 
 [![Build Status](https://dev.azure.com/delkkate96/dd/_apis/build/status/yongjun823.keyvalue?branchName=master)](https://dev.azure.com/delkkate96/dd/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://travis-ci.org/yongjun823/keyvalue.svg?branch=master)](https://travis-ci.org/yongjun823/keyvalue)
 
 # Installation
 
